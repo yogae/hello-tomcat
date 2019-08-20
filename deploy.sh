@@ -5,7 +5,7 @@ CPATH=$(pwd)
 
 source ./.env
 
-cd $CPATH/codedeploy && zip -r ../data.zip ./* 
+cd $CPATH/codedeploy && zip -r ../data.zip ./*
 cd $CPATH
 
 aws s3 cp data.zip s3://$S3_BUCKET/data.zip
