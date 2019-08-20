@@ -1,2 +1,5 @@
 data.zip
 .env
+.svn
+.git
+codedeploy/ROOT.war

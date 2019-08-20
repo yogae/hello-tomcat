@@ -1,0 +1,14 @@
+version: 0.2
+            
+phases:
+  install:
+    runtime-versions:
+      java: openjdk8
+  build:
+    commands:
+      - ls
+      - sh build.sh
+artifacts:
+  files:
+    - '**/*'
+  base-directory: 'dist'
